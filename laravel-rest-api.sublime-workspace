@@ -1,0 +1,378 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"new",
+				"newHotel"
+			],
+			[
+				"js",
+				"json"
+			],
+			[
+				"ho",
+				"hotel"
+			],
+			[
+				"co",
+				"collection"
+			],
+			[
+				"dbc",
+				"dbconn"
+			],
+			[
+				"a",
+				"api"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"bo",
+				"bodyParser"
+			],
+			[
+				"of",
+				"offset"
+			],
+			[
+				"hot",
+				"hotelData"
+			],
+			[
+				"r",
+				"require"
+			],
+			[
+				"ex",
+				"export"
+			],
+			[
+				"chi",
+				"child_process"
+			],
+			[
+				"fi",
+				"filename"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"t",
+				"talk"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Package Control Messages\n========================\n\nSublimeLinter\n-------------\n\n  \n    ____        _     _ _                _     _       _\n   / ___| _   _| |__ | (_)_ __ ___   ___| |   (_)_ __ | |_ ___ _ __\n   \\___ \\| | | | '_ \\| | | '_ ` _ \\ / _ \\ |   | | '_ \\| __/ _ \\ '__|\n    ___) | |_| | |_) | | | | | | | |  __/ |___| | | | | ||  __/ |\n   |____/ \\__,_|_.__/|_|_|_| |_| |_|\\___|_____|_|_| |_|\\__\\___|_|\n  \n  \n  Welcome to SublimeLinter, a linter framework for Sublime Text 3.\n  \n                   * * * IMPORTANT! * * *\n  \n          SublimeLinter 3 is NOT a drop-in replacement for\n          earlier versions.\n  \n          Linters *NOT* included with SublimeLinter 3, \n          they must be installed separately.\n  \n          The settings are different.\n  \n                  * * * READ THE DOCS! * * *\n  \n  Otherwise you will never know how to install linters, nor will\n  you know about all of the great new features in SublimeLinter 3.\n  \n  For complete documentation on how to install and use SublimeLinter,\n  please see:\n  \n  http://www.sublimelinter.com\n  \n  \n                   _   _      _       _\n                  | | | | ___| |_ __ | |\n                  | |_| |/ _ \\ | '_ \\| |\n                  |  _  |  __/ | |_) |_|\n                  |_| |_|\\___|_| .__/(_)\n                               |_|\n  \n  \n  Hundreds of hours have been spent writing and documenting SublimeLinter\n  to make it the best it can be — easy to use, easy to configure,\n  easy to update, easy to extend. If you use SublimeLinter and feel\n  it is making your coding life better and easier, please consider\n  making a donation to help fund development and support.\n  \n  To donate: https://github.com/SublimeLinter/SublimeLinter3#share-the-love\n  \n  Thank you!\n\n\nSublimeLinter-php\n-----------------\n\n  SublimeLinter-php\n  -------------------------------\n  This linter plugin for SublimeLinter provides an interface to php -l.\n  \n  ** IMPORTANT! **\n  \n  Before this plugin will activate, you *must*\n  follow the installation instructions here:\n  \n  https://github.com/SublimeLinter/SublimeLinter-php\n",
+			"settings":
+			{
+				"buffer_size": 2083,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 249.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Grzegorz/Sites/laravel-rest-api"
+	],
+	"file_history":
+	[
+		"/Users/Grzegorz/dump/francuas",
+		"/Users/Grzegorz/dump/function buildCreateQuery($table, &$arrayVal, $ti",
+		"/Users/Grzegorz/dump/accountentry.inc.php",
+		"/Users/Grzegorz/dump/posc.inc.php",
+		"/Users/Grzegorz/dump/db.inc.php",
+		"/Users/Grzegorz/dump/admin.inc.php",
+		"/Users/Grzegorz/dump/Tomorrow",
+		"/Users/Grzegorz/dump/Today",
+		"/untitled.php",
+		"/Users/Grzegorz/Downloads/jid-13712_uid-13733.sql",
+		"/Users/Grzegorz/Sites/reactjs/ReduxSimpleStarter/package.json",
+		"/Users/Grzegorz/Downloads/Marion.Needham@nass.uk.net_19818_2017-07-31 08-44-57_I/uk.co.faxi 2017-07-28 06-36.log",
+		"/Users/Grzegorz/Downloads/Marion.Needham@nass.uk.net_19818_2017-07-31 08-44-57_I/uk.co.faxi 2017-07-29 12-56.log",
+		"/Users/Grzegorz/Downloads/Marion.Needham@nass.uk.net_19818_2017-07-31 08-44-57_I/uk.co.faxi 2017-07-31 08-44.log",
+		"/Users/Grzegorz/Desktop/faxiapi_2017-07-26.sql",
+		"/Users/Grzegorz/Sites/faxiapi/conf/config_logger.json",
+		"/Users/Grzegorz/Downloads/index (1).php",
+		"/Users/Grzegorz/Downloads/Logger.php",
+		"/Users/Grzegorz/Sites/php-solid/05-D-dependecy-inversion/index.php",
+		"/Users/Grzegorz/Sites/php-mixture/logger/helper/Logger.php",
+		"/Volumes/TOSHIBA EXT/User-Grzegorz-Projects/firebox/support/server_confs/nelson/etc/my.cnf",
+		"/Users/Grzegorz/Downloads/33 APIs_DELETE removing data/api/controllers/reviews.controllers.js",
+		"/Users/Grzegorz/Downloads/33 APIs_DELETE removing data/api/controllers/hotels.controllers.js",
+		"/Users/Grzegorz/Downloads/32 APIs_PUT updating data/api/controllers/reviews.controllers.js",
+		"/Users/Grzegorz/Downloads/32 APIs_PUT updating data/api/controllers/hotels.controllers.js",
+		"/Users/Grzegorz/Downloads/31 APIs_POST adding data/api/controllers/reviews.controllers.js",
+		"/Users/Grzegorz/Downloads/31 APIs_POST adding data/api/controllers/hotels.controllers.js",
+		"/Users/Grzegorz/Sites/zf2-auth-doctrine/vendor/zendframework/zend-validator/src/Hostname.php",
+		"/Users/Grzegorz/Downloads/28 APIs_GET Mongoose query subdocs 2/api/controllers/reviews.controllers.js",
+		"/Users/Grzegorz/Sites/mean/express-mongoose/package.json",
+		"/Users/Grzegorz/Sites/mean/express/api/data/tech.json",
+		"/Users/Grzegorz/Sites/mean/express/api/data/hotel-data.json",
+		"/Users/Grzegorz/Sites/mean/express/app.js",
+		"/Users/Grzegorz/Sites/mean/express/public/index.html",
+		"/Users/Grzegorz/Sites/mean/express/routes/index.js",
+		"/Users/Grzegorz/Sites/mean/express/package.json",
+		"/Users/Grzegorz/Sites/mean/06-mean/package.json",
+		"/Users/Grzegorz/Sites/mean/express-start/package.json",
+		"/Users/Grzegorz/Sites/mean/06-mean/app.js",
+		"/Users/Grzegorz/Sites/mean/express/.gitignore",
+		"/Users/Grzegorz/Sites/mean/06-mean/.gitignore",
+		"/Users/Grzegorz/Sites/mean/05-mean/_fibonacci.js",
+		"/Users/Grzegorz/Sites/mean/readme.txt",
+		"/Users/Grzegorz/Sites/mean/05-mean/computational-non-blocking.js",
+		"/Users/Grzegorz/Sites/mean/05-mean/setTimeout.js",
+		"/Users/Grzegorz/Sites/mean/05-mean/readFileSync.js",
+		"/Users/Grzegorz/Sites/mean/05-mean/readFileAsync.js",
+		"/Users/Grzegorz/Sites/mean/05-mean/computational-blocking.js",
+		"/Users/Grzegorz/Sites/mean/app.js",
+		"/Users/Grzegorz/Sites/mean/instantHello.js",
+		"/Users/Grzegorz/Sites/mean/talk/index.js",
+		"/Users/Grzegorz/Sites/mean/talk/goodbye.js",
+		"/Users/Grzegorz/Sites/mean/talk/question.js",
+		"/Users/Grzegorz/WebstormProjects/nodeJS/bear/app/models/bear.js",
+		"/Users/Grzegorz/Sites/php-practitioner-mvc/index.php",
+		"/Users/Grzegorz/Downloads/index.php",
+		"/Users/Grzegorz/Desktop/ph-betting_2016-12-20.sql",
+		"/Users/Grzegorz/Downloads/apiReader-ps4/app/Reader/WilliamXml.php",
+		"/Users/Grzegorz/Downloads/printdigital/vendor/twilio-php/Services/Twilio/Rest/Applications.php",
+		"/Users/Grzegorz/Sites/php-practitioner-mvc/config.php",
+		"/Users/Grzegorz/Sites/php-practitioner-mvc/composer.json",
+		"/Users/Grzegorz/Desktop/angular/cms/db.sql",
+		"/Users/Grzegorz/Desktop/ZendFramework-1.12.20/composer.json",
+		"/Users/Grzegorz/Desktop/lv-project_2016-08-09.sql",
+		"/Users/Grzegorz/Desktop/ajaxdb_2016-07-30.sql",
+		"/Users/Grzegorz/Desktop/FriendInvites.php",
+		"/Users/Grzegorz/projects/firebox/symfony/src/AppBundle/Checkout/BoxPacker/Item.php",
+		"/Users/Grzegorz/Sites/react-start/gulpfile.js",
+		"/Users/Grzegorz/Sites/react-start/index.html",
+		"/Users/Grzegorz/Sites/react/ReactStarter/gulpfile.js",
+		"/Users/Grzegorz/Sites/react/ReactStarter/package.json",
+		"/Users/Grzegorz/projects/firebox/symfony/src/AppBundle/Admin/SeoLinkAdmin.php",
+		"/Users/Grzegorz/Desktop/sfSampleCrudApp_2016-03-06.sql",
+		"/Users/Grzegorz/projects/firebox/admin/www/orderListing.php",
+		"/Users/Grzegorz/Downloads/printdigital/vendor/db/settings.ini.php",
+		"/Users/Grzegorz/Sites/blo/app/Customer.php",
+		"/Users/Grzegorz/Sites/blo/vendor/symfony/finder/Finder.php",
+		"/Users/Grzegorz/Desktop/reader.sql",
+		"/Users/Grzegorz/Sites/xampp/htdocs/newsInternational/readerNewsUKCMS/_db/reader.sql",
+		"/Users/Grzegorz/Sites/garbage/voting/config.php",
+		"/Volumes/UUI/newsInternational/reader/_db/reader.sql",
+		"/Users/Grzegorz/Downloads/client_secret_855342193799-2t2iblfadl87gl1codhdk96e5a466gq4.apps.googleusercontent.com.json",
+		"/Users/Grzegorz/Desktop/authentication_2016-01-18.sql",
+		"/Users/Grzegorz/Desktop/authentication_2016-01-16.sql",
+		"/Users/Grzegorz/Desktop/authentication_2016-01-15.sql",
+		"/Users/Grzegorz/Desktop/Inbox (2,986) - gregor.sokolowski@gmail.com - Gmail_files/2408744513-postmessagerelay.js",
+		"/Library/WebServer/Documents/phpmyadmin/config/config.inc.php",
+		"/Users/Grzegorz/Downloads/fullSearchResults.json",
+		"/Users/Grzegorz/Downloads/fullSearchResults (1).json",
+		"/Users/Grzegorz/Downloads/6017_SectionWithCarousel (1).json",
+		"/Users/Grzegorz/Downloads/6017_SectionWithCarousel.json",
+		"/Users/Grzegorz/WebstormProjects/work/ni-web-sun-nextgen/App/images/sol-sprite.svg",
+		"/Users/Grzegorz/dupa/dupa.html",
+		"/Users/Grzegorz/dupa/index.html"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2083,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2083,
+								2083
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "/Users/Grzegorz/Sites/laravel-rest-api",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "laravel-rest-api.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

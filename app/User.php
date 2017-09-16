@@ -2,12 +2,13 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
     use Notifiable;
+
 
     const VERIFIED_USER = '1';
     const UNVERIFIED_USER = '0';
