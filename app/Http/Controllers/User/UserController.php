@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
-
+use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -30,7 +30,24 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validationRules = [
+            'name' => 'required',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6|confirmed',
+        ];
+
+        // validate request with validationRules
+        $this->validate($request, $validationRules);
+
+        $data = $request->all();
+
+        $data['password'] = bcrypt($request->password);
+        $data['verified'] = User::UNVERIFIED_USER;
+        $data['verification_token'] = User::generateVerificationCode();
+        $data['admin'] = User::REGULAR_USER;
+
+        $user = User::create($data);
+        return response()->json(['data' => $user], 201);
     }
 
     /**
@@ -42,11 +59,11 @@ class UserController extends Controller
     public function show($id)
     {
         $user = User::findOrFail($id);
-
-        // ss
+        return response()->json([
+            'data' => $user
+        ], 200);
 
     }
-
 
     /**
      * Update the specified resource in storage.
@@ -57,7 +74,47 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::findOrFail($id);
+
+        $rules = [
+            'email' => 'email|unique:users,email,' . $user->id,
+            'password' => 'min:6|confirmed',
+            'admin' => 'in:' . User::ADMIN_USER . ',' . User::REGULAR_USER,
+        ];
+
+        if ($request->has('name')) {
+            $user->name = $request->name;
+        }
+
+        // user may update his email
+        if ($request->has('email') && $user->email != $request->email) {
+            $user->verified = User::UNVERIFIED_USER;
+            $user->verification_token = User::generateVerificationCode();
+            $user->email = $request->email;
+        }
+
+        // user may update his password
+        if ($request->has('password')) {
+            $user->password = bcrypt($request->password);
+        }
+
+        if ($request->has('admin')) {
+            if (!$user->isVerified()) {
+                return response()->json(['error' => 'Only verified users can modify the admin field', 'code' => 409], 409);
+            }
+            $user->admin = $request->admin;
+        }
+
+        // if isDirty method returns that means something has changed on user model if doesn't return then
+        // return that nothing has changed
+        if (!$user->isDirty()) {
+            return response()->json(['error' => 'No changes passed for the user - specify values you would like to update', 'code' => 422], 422);
+        }
+
+        // if is changed so you need to save changes
+        $user->save();
+
+        return response()->json(['data' => $user], 200);
     }
 
     /**
@@ -68,6 +125,10 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+
+        $user->delete();
+
+        return response()->json(['data' => $user], 200);
     }
 }
