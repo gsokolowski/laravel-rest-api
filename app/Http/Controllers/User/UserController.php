@@ -78,11 +78,8 @@ class UserController extends ApiController
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
+        $user = User::findOrFail($id);
 
-        if ($user == null) {
-            return $this->errorResponse('Requested user does not exist', 404);
-        }
 
         $rules = [
             'email' => 'email|unique:users,email,' . $user->id,
@@ -136,11 +133,7 @@ class UserController extends ApiController
      */
     public function destroy($id)
     {
-        $user = User::find($id);
-
-        if ($user == null) {
-            return $this->errorResponse('Requested user does not exist', 404);
-        }
+        $user = User::findOrFail($id);
 
         $user->delete();
 
