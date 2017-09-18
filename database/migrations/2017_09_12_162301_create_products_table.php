@@ -24,6 +24,7 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->integer('seller_id')->unsigned(); // can't be negative
             $table->timestamps();
+            $table->softDeletes(); // will add new column deleted_at
 
             // there is not buyer or seller table.
             // It's only user table and seller_id references to users id on users table so add that foreign key

@@ -26,9 +26,9 @@ class SellerController extends ApiController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Seller $seller)
     {
-        $seller = Seller::has('products')->findOrFail($id);
+        //$seller = Seller::has('products')->findOrFail($id); // this part is done on SellerScope
         //return response()->json(['data' => $seller], 200);
         return $this->showOne($seller, 200); // using trait
     }

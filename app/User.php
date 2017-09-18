@@ -2,13 +2,17 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable
 
+    // for sof deleting - build in laravel feature
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
 
     const VERIFIED_USER = '1';
     const UNVERIFIED_USER = '0';

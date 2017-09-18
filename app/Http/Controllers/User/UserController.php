@@ -59,9 +59,9 @@ class UserController extends ApiController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(User $user) // User $user implicit model Binding
     {
-        $user = User::findOrFail($id);
+//        $user = User::findOrFail($id);
 //        return response()->json([
 //            'data' => $user
 //        ], 200);
@@ -76,10 +76,9 @@ class UserController extends ApiController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $user) // User $user implicit model Binding
     {
-        $user = User::findOrFail($id);
-
+        //$user = User::findOrFail($id);
 
         $rules = [
             'email' => 'email|unique:users,email,' . $user->id,
@@ -131,9 +130,9 @@ class UserController extends ApiController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $user) // User $user implicit model Binding
     {
-        $user = User::findOrFail($id);
+        //$user = User::findOrFail($id);
 
         $user->delete();
 

@@ -7,9 +7,14 @@ use App\Category;
 use App\Transaction;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
+    // for sof deleting - build in laravel feature
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
+
     const AVAILABLE_PRODUCT = 'available';
     const UNAVAILABLE_PRODUCT = 'unavailable';
     protected $fillable = [

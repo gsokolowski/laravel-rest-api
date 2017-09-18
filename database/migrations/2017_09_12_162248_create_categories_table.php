@@ -18,6 +18,7 @@ class CreateCategoriesTable extends Migration
             $table->string('name');
             $table->string('description', 1000); // 1000 characters
             $table->timestamps();
+            $table->softDeletes(); // will add new column deleted_at
         });
     }
 
