@@ -78,7 +78,11 @@ class UserController extends ApiController
      */
     public function update(Request $request, $id)
     {
-        $user = User::findOrFail($id);
+        $user = User::find($id);
+
+        if ($user == null) {
+            return $this->errorResponse('Requested user does not exist', 404);
+        }
 
         $rules = [
             'email' => 'email|unique:users,email,' . $user->id,
@@ -104,7 +108,8 @@ class UserController extends ApiController
 
         if ($request->has('admin')) {
             if (!$user->isVerified()) {
-                return response()->json(['error' => 'Only verified users can modify the admin field', 'code' => 409], 409);
+                //return response()->json(['error' => 'Only verified users can modify the admin field', 'code' => 409], 409);
+                return $this->errorResponse('Only verified users can modify the admin field', 409);
             }
             $user->admin = $request->admin;
         }
@@ -112,7 +117,8 @@ class UserController extends ApiController
         // if isDirty method returns that means something has changed on user model if doesn't return then
         // return that nothing has changed
         if (!$user->isDirty()) {
-            return response()->json(['error' => 'No changes passed for the user - specify values you would like to update', 'code' => 422], 422);
+            //return response()->json(['error' => 'No changes passed for the user - specify values you would like to update', 'code' => 422], 422);
+            return $this->errorResponse('No changes passed for the user - specify values you would like to update', 422);
         }
 
         // if is changed so you need to save changes
@@ -130,7 +136,11 @@ class UserController extends ApiController
      */
     public function destroy($id)
     {
-        $user = User::findOrFail($id);
+        $user = User::find($id);
+
+        if ($user == null) {
+            return $this->errorResponse('Requested user does not exist', 404);
+        }
 
         $user->delete();
 
