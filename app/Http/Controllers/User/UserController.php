@@ -80,11 +80,13 @@ class UserController extends ApiController
     {
         //$user = User::findOrFail($id);
 
-        $rules = [
+        $validationRules = [
             'email' => 'email|unique:users,email,' . $user->id,
             'password' => 'min:6|confirmed',
             'admin' => 'in:' . User::ADMIN_USER . ',' . User::REGULAR_USER,
         ];
+
+        $this->validate($request, $validationRules);
 
         if ($request->has('name')) {
             $user->name = $request->name;
