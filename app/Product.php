@@ -17,6 +17,7 @@ class Product extends Model
 
     const AVAILABLE_PRODUCT = 'available';
     const UNAVAILABLE_PRODUCT = 'unavailable';
+
     protected $fillable = [
         'name',
         'description',
@@ -24,6 +25,10 @@ class Product extends Model
         'status',
         'image',
         'seller_id',
+    ];
+
+    protected $hidden = [
+        'pivot' // to remove pivot table data from category controllers results - you need to put the same hidden to product model
     ];
 
     public function isAvailable()

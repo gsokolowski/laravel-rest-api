@@ -21,6 +21,10 @@ class Category extends Model
         'description'
     ];
 
+    protected $hidden = [
+        'pivot' // to remove pivot table data from category controllers results - you need to put the same hidden to product model
+    ];
+
     // category belongs to many products (and product belongs to meny categories - see product model)
     public function products()
     {
